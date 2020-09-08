@@ -21,7 +21,7 @@
             <input type="text" name="phone" id="contact" class="form-control" value="{{old('phone')}}">            
         </div>
         <div>
-            <button type="submit" class="btn btn-light">Salvar 💾</button>
+            <button type="submit" class="btn btn-secondary">Salvar 💾</button>
         </div>
     </form>
 @endsection

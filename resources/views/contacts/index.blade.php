@@ -6,7 +6,7 @@
     <table class="table table-bordered table-striped table-dark ">
         <thead>
             <tr>
-                <th scope="col" colspan="5" class="mx-auto h3"> Lista de Contatos </th>
+                <th scope="col" colspan="5" class="mx-auto h3 text-center"> Lista de Contatos </th>
             </tr>
         <tbody>
             @foreach ( $contacts as $contact)
@@ -19,7 +19,7 @@
                 <form action="/contacts/{{ $contact->id }}" method="POST">
                     @csrf
                     <input type="hidden" name="_method" value="DELETE">
-                    <button class=" btn " type="submit">⚰️</button>
+                    <button class=" btn" type="submit">⚰️</button>
                 </form></td>         
             </tr>
             @endforeach
