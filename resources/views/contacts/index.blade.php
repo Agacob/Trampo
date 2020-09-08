@@ -14,8 +14,8 @@
                 <td>{{ $contact->name}}</td>     
                 <td>{{ $contact->email}}</td>
                 <td>{{ $contact->phone}}</td>
-                <td><a href="" class="navbar-brand text-info">✏️</a></td>
-                <td><a href="" class="navbar-brand text-info">⚰️</a></td>         
+                <td><a href="/contacts/{{ $contact->id }}/edit" class="navbar-brand text-info">✏️</a></td>                
+                <td><a href="/contacts/{{ $contact->id }}/delete" class="navbar-brand text-info">⚰️</a></td>         
             </tr>
             @endforeach
         </tbody>     

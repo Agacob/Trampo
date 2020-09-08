@@ -69,7 +69,7 @@ class ContactController extends Controller
      */
     public function edit(Contact $contact)
     {
-        //
+        return view('contacts.edit', compact('contact'));
     }
 
     /**
@@ -81,8 +81,19 @@ class ContactController extends Controller
      */
     public function update(Request $request, Contact $contact)
     {
-        //
+         $request->validate([
+            'name' => 'required|max:255|',
+            'email' => 'required|max:255|'
+            ]);
+        
+        $contact->name = $request->input('name');
+        $contact->email = $request->input('email');
+        $contact->phone = $request->input('phone');
+        $contact->save();
+
+        return redirect('/contacts');
     }
+
 
     /**
      * Remove the specified resource from storage.
@@ -92,6 +103,9 @@ class ContactController extends Controller
      */
     public function destroy(Contact $contact)
     {
-        //
+        $contact->delete();
+        return redirect('/contact');
     }
+
+    
 }
