@@ -12,10 +12,10 @@
     <div class=" p-3 mb-2  text-light mx-auto">        
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-                <a href="/contacts" class="collapse navbar-collapse text-info"> Listar Contatos 📖</a>
-                <a href="/contacts/create" class="collapse navbar-collapse  text-info">Criar novo Contato 🆕</a>
-                <a href="/" class="collapse navbar-collapse  text-info">Tele Inicial 📁</a>
-                <a href="/authors" class="collapse navbar-collapse  text-info"> Autor 🐼</a>
+                <a href="/contacts" class="collapse navbar-collapse text-info  h3"> Listar Contatos 📖</a>
+                <a href="/contacts/create" class="collapse navbar-collapse  text-info h3 ">Criar novo Contato 🆕</a>
+                <a href="/" class="collapse navbar-collapse  text-info h3 ">Tele Inicial 📁</a>
+                <a href="/authors" class="collapse navbar-collapse  text-info h3"> Autor 🐼</a>
             </nav>
         @yield('content')
     </div>
