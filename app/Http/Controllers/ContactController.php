@@ -104,7 +104,7 @@ class ContactController extends Controller
     public function destroy(Contact $contact)
     {
         $contact->delete();
-        return redirect('/contact');
+        return redirect('/contacts');
     }
 
     
